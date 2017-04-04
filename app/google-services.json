@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "565931788116",
+    "firebase_url": "https://myappchat-748c7.firebaseio.com",
+    "project_id": "myappchat-748c7",
+    "storage_bucket": "myappchat-748c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565931788116:android:0b70df5662848cb2",
+        "android_client_info": {
+          "package_name": "com.congnin.chat.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565931788116-6o0l646sgvoed390usp25r5qk1bt1lcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.congnin.chat.app",
+            "certificate_hash": "eaf9e9cb1b6f2f8b7de974fb882a54bf96132a5f"
+          }
+        },
+        {
+          "client_id": "565931788116-ibabikn3nhpp7j0oobmtlkdant2tmnp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2T7-Xg6-QVBTM2stHtdbAwXJ4awUyfpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565931788116-ibabikn3nhpp7j0oobmtlkdant2tmnp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

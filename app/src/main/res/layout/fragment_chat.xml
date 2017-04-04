@@ -8,20 +8,38 @@
         android:id="@+id/recycler_view_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/edit_text_message"
+        android:layout_above="@+id/edit_text_message_layout"
         app:layoutManager="LinearLayoutManager" />
 
-    <EditText
-        android:id="@+id/edit_text_message"
+    <RelativeLayout
+        android:id="@+id/edit_text_message_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/margin_small"
-        android:background="@drawable/rounded_rect_bg"
-        android:hint="@string/type_a_message"
-        android:imeOptions="actionSend"
-        android:inputType="text"
-        android:maxLines="1"
-        android:padding="@dimen/padding_small" />
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/rounded_rect_bg"
+            android:hint="@string/type_a_message"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/padding_small" />
+
+        <ImageView
+            android:id="@+id/imageview_send"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_send_chat"/>
+    </RelativeLayout>
+
 
 </RelativeLayout>
