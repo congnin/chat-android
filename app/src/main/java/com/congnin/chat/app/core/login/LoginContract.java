@@ -1,4 +1,4 @@
-package com.congnin.chat.app.core;
+package com.congnin.chat.app.core.login;
 
 import android.app.Activity;
 

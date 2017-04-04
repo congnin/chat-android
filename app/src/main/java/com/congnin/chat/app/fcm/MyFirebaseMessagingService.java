@@ -6,12 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.congnin.chat.app.FirebaseChatMainApp;
 import com.congnin.chat.app.R;
 import com.congnin.chat.app.events.PushNotificationEvent;
+import com.congnin.chat.app.ui.ChatActivity;
 import com.congnin.chat.app.utils.Constants;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
