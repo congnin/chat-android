@@ -50,13 +50,16 @@ public class ChatInteractor implements ChatContract.Interactor {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.hasChild(room_type_1)) {
                     Log.e(TAG, "sendMessageToFirebaseUser: " + room_type_1 + " exists");
-                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_1).child(String.valueOf(chat.getTimestamp())).setValue(chat);
+                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_1)
+                            .child(String.valueOf(chat.getTimestamp())).setValue(chat);
                 } else if (dataSnapshot.hasChild(room_type_2)) {
                     Log.e(TAG, "sendMessageToFirebaseUser: " + room_type_2 + " exists");
-                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_2).child(String.valueOf(chat.getTimestamp())).setValue(chat);
+                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_2)
+                            .child(String.valueOf(chat.getTimestamp())).setValue(chat);
                 } else {
                     Log.e(TAG, "sendMessageToFirebaseUser: success");
-                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_1).child(String.valueOf(chat.getTimestamp())).setValue(chat);
+                    databaseReference.child(Constants.ARG_CHAT_ROOMS).child(room_type_1)
+                            .child(String.valueOf(chat.getTimestamp())).setValue(chat);
                     getMessageFromFirebaseUser(chat.getSenderUid(), chat.getReceiverUid());
                 }
                 // send push notification to the receiver
@@ -97,7 +100,8 @@ public class ChatInteractor implements ChatContract.Interactor {
 
         final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        databaseReference.child(Constants.ARG_CHAT_ROOMS).getRef().addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.child(Constants.ARG_CHAT_ROOMS).getRef()
+                .addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.hasChild(room_type_1)) {

@@ -43,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private void init() {
         setSupportActionBar(mToolbar);
-
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout_content_login,
                 LoginFragment.newInstance(),

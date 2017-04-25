@@ -20,4 +20,13 @@
     <string name="logout">Logout</string>
     <string name="are_you_sure">Are you sure ?</string>
     <string name="cancel">Cancel</string>
+    <array name="array_notify">
+        <item>こんにちは、[kanja]さま。</item>
+        <item>いとう歯科クリニックです。</item>
+        <item>明日、[rtime]よりご予約をいただいております。</item>
+        <item>なお、ご予約の変更を希望される場合は、ご遠慮無くお知ら</item>
+        <item>せくださいませ。</item>
+        <item>それでは、スタッフ一同、お待ちしております。＾＾</item>
+    </array>
+    <string name="notify_first_time">こんにちは、[kanja]さま。\nいとう歯科クリニックです。\n明日、[rtime]よりご予約をいただいております。\nなお、ご予約の変更を希望される場合は、ご遠慮無くお知ら\nせくださいませ。\nそれでは、スタッフ一同、お待ちしております。＾＾</string>
 </resources>

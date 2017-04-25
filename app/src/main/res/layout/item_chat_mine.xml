@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
     android:background="?android:attr/selectableItemBackground"
     android:clickable="true"
     android:gravity="center_vertical"
@@ -12,11 +13,12 @@
     android:paddingStart="@dimen/padding_avg"
     android:paddingTop="@dimen/padding_small">
 
-    <TextView
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
         android:id="@+id/text_view_chat_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_huge"
+        emojicon:emojiconSize="28sp"
         android:layout_toStartOf="@+id/text_view_user_alphabet"
         android:background="@drawable/chat_rounded_rect_bg"
         android:padding="@dimen/padding_small"

@@ -33,6 +33,9 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
 
+import hani.momanii.supernova_emoji_library.Actions.EmojIconActions;
+import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
+
 /**
  * Created by congnc on 4/4/17.
  */
@@ -40,7 +43,8 @@ import java.util.ArrayList;
 public class ChatFragment extends Fragment implements ChatContract.View, TextView.OnEditorActionListener,
         View.OnClickListener {
     private RecyclerView mRecyclerViewChat;
-    private EditText mETxtMessage;
+    private EmojiconEditText mETxtMessage;
+    ImageView emojiImageView;
 
     private ProgressDialog mProgressDialog;
 
@@ -84,9 +88,12 @@ public class ChatFragment extends Fragment implements ChatContract.View, TextVie
 
     private void bindViews(View view) {
         mRecyclerViewChat = (RecyclerView) view.findViewById(R.id.recycler_view_chat);
-        mETxtMessage = (EditText) view.findViewById(R.id.edit_text_message);
-        mIvSend = (ImageView) view.findViewById(R.id.imageview_send);
+        mETxtMessage = (EmojiconEditText) view.findViewById(R.id.edit_text_message);
+        EmojIconActions emojIcon = new EmojIconActions(getActivity(), view, mETxtMessage, emojiImageView);
+        emojIcon.ShowEmojIcon();
+                mIvSend = (ImageView) view.findViewById(R.id.imageview_send);
         mRecyclerViewChat.setLayoutManager(new LinearLayoutManager(getActivity()));
+
     }
 
     @Override

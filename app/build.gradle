@@ -18,6 +18,9 @@ android {
         }
     }
 }
+repositories {
+    maven { url "https://dl.bintray.com/hani-momanii/maven"}
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -38,5 +41,6 @@ dependencies {
 
     // event bus
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
 }
 apply plugin: 'com.google.gms.google-services'

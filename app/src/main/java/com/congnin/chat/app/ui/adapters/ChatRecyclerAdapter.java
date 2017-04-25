@@ -13,6 +13,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.List;
 
+import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
+import hani.momanii.supernova_emoji_library.Helper.EmojiconTextView;
+
 /**
  * Created by congnc on 4/4/17.
  */
@@ -96,21 +99,23 @@ public class ChatRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private static class MyChatViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtChatMessage, txtUserAlphabet;
+        private EmojiconTextView txtChatMessage;
+        private TextView txtUserAlphabet;
 
         public MyChatViewHolder(View itemView) {
             super(itemView);
-            txtChatMessage = (TextView) itemView.findViewById(R.id.text_view_chat_message);
+            txtChatMessage = (EmojiconTextView) itemView.findViewById(R.id.text_view_chat_message);
             txtUserAlphabet = (TextView) itemView.findViewById(R.id.text_view_user_alphabet);
         }
     }
 
     private static class OtherChatViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtChatMessage, txtUserAlphabet;
+        private EmojiconTextView txtChatMessage;
+        private TextView txtUserAlphabet;
 
         public OtherChatViewHolder(View itemView) {
             super(itemView);
-            txtChatMessage = (TextView) itemView.findViewById(R.id.text_view_chat_message);
+            txtChatMessage = (EmojiconTextView) itemView.findViewById(R.id.text_view_chat_message);
             txtUserAlphabet = (TextView) itemView.findViewById(R.id.text_view_user_alphabet);
         }
     }
